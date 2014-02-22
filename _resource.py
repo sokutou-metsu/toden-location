@@ -182,6 +182,7 @@ _POSITION_TABLE = {
         299: (STOP, FOR_MINOWA, '9913', None),
         332: (MOVE, FOR_MINOWA, '9913', '9912'),
         366: (STOP, FOR_MINOWA, '9912', None),
+        393: (MOVE, FOR_MINOWA, '9912', '9911'),
         400: (MOVE, FOR_MINOWA, '9912', '9911'),
         434: (STOP, FOR_MINOWA, '9911', None),
         467: (MOVE, FOR_MINOWA, '9911', '9910'),
