@@ -45,6 +45,10 @@ class Car(object):
         return self._attributes.get('destination', None)
 
     @property
+    def direction(self):
+        return self._attributes.get('direction', None)
+
+    @property
     def update_time(self):
         return self._attributes.get('update_time', None)
 
@@ -65,7 +69,7 @@ class Car(object):
 
 def output_as_csv(cars, output_file):
     FIELD_NAMES = ['date', 'time', 'car_id', 'status',
-                   'current_stop', 'next_stop', 'destination']
+                   'current_stop', 'next_stop', 'direction', 'destination']
 
     def make_record(car):
         r = {}
@@ -76,6 +80,7 @@ def output_as_csv(cars, output_file):
         r['status'] = car.status
         r['current_stop'] = car.current_stop
         r['next_stop'] = car.next_stop
+        r['direction'] = car.direction
         r['destination'] = car.destination
         return r
 
